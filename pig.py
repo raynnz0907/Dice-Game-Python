@@ -20,3 +20,11 @@ while True:
     else:
         print("invalid input, try agian.")
 
+max_score = 50
+player_scores = [0 for _ in range(players)]
+
+while max(player_scores) < max_score:
+
+    for player_index in range(players):
+        print("\n Player number", player_index + 1, "turn has just started")
+        current_score = 0
